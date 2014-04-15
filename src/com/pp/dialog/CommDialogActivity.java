@@ -33,35 +33,20 @@ public class CommDialogActivity extends Activity
     
     public void OpenInfoDialog(View v)
     {
-//        AlertDialog showInfoDialog = CommAlertDialog.showInfoDialog(this, "这是一个测试信息");
+        AlertDialog showInfoDialog = CommAlertDialog.showInfoDialog(this, "这是一个测试信息");
+    }
+    
+    public void OpenConfirmDialog(View v)
+    {
         
         AlertDialog showInfoDialog = CommAlertDialog.showConfirmDialog(this, "这是一个测试信息" ,new OnConfirmClickListener()
         {
-            
             @Override
             public void onClick(View v)
             {
-                   CommToast.showInfo(CommDialogActivity.this, "确定!!!!");
+                CommToast.showInfo(CommDialogActivity.this, "确定!!!!");
             }
         });
-        
-//        AsyncTask<Object, Object, Object> asyncTask = new AsyncTask<Object, Object, Object>()
-//        {
-//
-//            @Override
-//            protected Object doInBackground(Object... params)
-//            {
-//                try
-//                {
-//                    new Thread().sleep(2000);
-//                    CommAlertDialog.dismiss();
-//                } catch (InterruptedException e)
-//                {
-//                    e.printStackTrace();
-//                }
-//                return null;
-//            }};
-//        asyncTask.execute();
         
     }
     

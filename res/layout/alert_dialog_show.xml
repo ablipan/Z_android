@@ -9,7 +9,13 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/alert_dialog_show" 
+        android:text="@string/alert_dialog_info_show" 
         android:onClick="OpenInfoDialog"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/alert_dialog_confirm_show" 
+        android:onClick="OpenConfirmDialog"
         />
 </LinearLayout>

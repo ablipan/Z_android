@@ -42,20 +42,21 @@ public class HttpTest extends AndroidTestCase
     public void testHttpReq()
     {
      
-        final String url = "http://10.11.125.223:14141/mvno-mapp-1.0/search/initAccountSearchPage";
-        final RequestParams params = new RequestParams();
-        params.put("telPhone", "XF/QUGbveCGrdstXJlyx2w==");
-        params.put("cycle", "201404");
+//        final String url = "http://114.255.216.118:14141/mvno-mapp/login?userCode=BmcyLdwJKvDPlsrfsnsFUw==&password=5XKRL8zBZPw=";
+//        final String url = "http://114.255.216.118:14141/mvno-mapp/login";
+        final String url = "http://114.255.216.118:14141/mvno-mapp/search/initAccountSearchPage";
+//        final RequestParams params = new RequestParams();
+//        params.put("userCode", "BmcyLdwJKvDPlsrfsnsFUw==");
+//        params.put("password", "5XKRL8zBZPw=");
+        SyncHttpClient  client = new SyncHttpClient();
         
-        SyncHttpClient client2 = new SyncHttpClient();
-        client2.get(getContext(), url, new TextHttpResponseHandler("UTF-8"){
+        client.get(url, new RequestParams("telPhone","XF/QUGbveCGrdstXJlyx2w=="),  new TextHttpResponseHandler("UTF-8"){
 
             @Override
             public void onSuccess(int statusCode, Header[] headers,
                     String responseBody)
             {
-
-                Log.i(TAG, "fuck10");
+                Log.i(TAG, responseBody);
             }
 
             @Override
@@ -67,34 +68,23 @@ public class HttpTest extends AndroidTestCase
             
         });
         
-        
-        new Thread(new Runnable()
-        {
-            
+        SyncHttpUtil.post(url, null, new TextHttpResponseHandler("UTF-8"){
+
             @Override
-            public void run()
+            public void onSuccess(int statusCode, Header[] headers,
+                    String responseBody)
             {
-                AsyncHttpClient client = new AsyncHttpClient();
-                client.get(url,params,new TextHttpResponseHandler()
-                {
-                    
-                    @Override
-                    public void onSuccess(int statusCode, Header[] headers,
-                            String responseString)
-                    {
-                        Log.i(TAG, "fuck1");
-                    }
-                    
-                    @Override
-                    public void onFailure(int statusCode, Header[] headers,
-                            String responseString, Throwable throwable)
-                    {
-                        Log.i(TAG, "fuck2");
-                    }
-                });
-                
+                Log.i(TAG, responseBody);
             }
-        }).start();
+
+            @Override
+            public void onFailure(int statusCode, Header[] headers,
+                    String responseString, Throwable throwable)
+            {
+                Log.i(TAG, "fuck11");
+            }
+            
+        });
         
 
         }

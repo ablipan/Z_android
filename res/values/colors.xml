@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-	<!-- alertDialog 按钮颜色 -->
-    <color name="alert_dialog_btn_color">#125FAD</color>
+    <!-- 按钮文字颜色  -->
+    <color name="comm_btn_text_color">#036eb8</color>
+    <!-- 按钮点击后的颜色  -->
+    <color name="comm_btn_click_color">#e5e5e5</color>
+    
 </resources>

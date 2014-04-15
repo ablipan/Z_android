@@ -20,6 +20,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.pp.R;
+import com.pp.utils.ViewUtils;
 
 /**
  * @author : lipan
@@ -107,7 +108,7 @@ public class CommLoading
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
         // loading布局视图
-        View layout = inflater.inflate(R.layout.loading_dialog, null);
+        View layout = inflater.inflate(R.layout.comm_loading, null);
 
         // loading的圆圈...
         ImageView loadImage = (ImageView) layout
@@ -125,11 +126,12 @@ public class CommLoading
         }
 
         // 取消加载按钮
-        // ImageView loadingCancelImg = (ImageView) layout
-        // .findViewById(R.id.loading_cancel);
-        View loadingCancelImg = (View) layout
+         ImageView loadingCancelImg = (ImageView) layout
+         .findViewById(R.id.loading_cancel);
+         
+        View loadingCancelView = (View) layout
                 .findViewById(R.id.loading_cancel_view);
-        loadingCancelImg.setOnClickListener(new View.OnClickListener()
+        loadingCancelView.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
@@ -138,6 +140,9 @@ public class CommLoading
             }
         });
 
+        //
+        ViewUtils.addViewTouchAlpha(loadingCancelView, loadingCancelImg);
+        
         loadingDialog = new Dialog(context, R.style.loading_dialog)
         {
             // 返回按钮事件——隐藏laodingdialog

@@ -30,7 +30,7 @@ public class LoadingActivity extends Activity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.loading_show);
+        setContentView(R.layout.comm_loading_show);
     }
     
     Dialog dialog;

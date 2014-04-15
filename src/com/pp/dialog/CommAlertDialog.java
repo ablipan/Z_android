@@ -38,7 +38,7 @@ public class CommAlertDialog
     {
         //自定义 alertdialog 视图
         LayoutInflater inflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View dialogView = inflater.inflate(R.layout.alert_dialog_info, null);
+        View dialogView = inflater.inflate(R.layout.comm_alert_dialog_info, null);
         TextView dialogText = (TextView)dialogView.findViewById(R.id.dialogInfoText);
         dialogText.setText(message);
         
@@ -71,7 +71,7 @@ public class CommAlertDialog
     {
         //自定义 alertdialog 视图
         LayoutInflater inflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View dialogView = inflater.inflate(R.layout.alert_dialog_confirm, null);
+        View dialogView = inflater.inflate(R.layout.comm_alert_dialog_confirm, null);
         TextView dialogText = (TextView)dialogView.findViewById(R.id.dialogInfoText);
         dialogText.setText(message);
         

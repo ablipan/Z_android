@@ -27,7 +27,7 @@ public class ToastActivity extends Activity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.toast_show);
+        setContentView(R.layout.comm_toast_show);
     }
  
     

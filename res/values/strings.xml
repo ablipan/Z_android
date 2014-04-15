@@ -21,13 +21,9 @@
     
     
     <!-- loading Dialog -->
-    <string name="loading_text">加载中&#8230;</string>
+    <string name="loading_text">加载中&#8230;&#8230;</string>
     <string name="loading_show">打开loading</string>
-    <string name="loading_text_custerm">啊哟哟&#8230;</string>
-    
-    <!-- img  contentDescription -->
-    <string name="loading_circle">loading图片</string>
-    <string name="loading_cancel">取消加载</string>
+    <string name="loading_text_custerm">加载中&#8230;&#8230;</string>
     
     <!-- Toast -->
     <string name="toast_show">显示Toast</string>
@@ -37,7 +33,8 @@
     <string name="base_activity_b">我是ActivityB</string>
     
     <!-- AlertDialog -->
-    <string name="alert_dialog_show">显示普通dialog</string>
+    <string name="alert_dialog_info_show">显示普通dialog</string>
+    <string name="alert_dialog_confirm_show">显示comfirm</string>
     <string name="alert_dialog_confirm">确定</string>
     <string name="alert_dialog_cancel">取消</string>
     

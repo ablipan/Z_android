@@ -3,7 +3,7 @@
     android:layout_height="@dimen/loading_height"
     android:layout_width="wrap_content"
     android:gravity="center" 
-    android:background="@android:color/white"
+    android:background="@drawable/comm_round_coner_white_bg"
     android:orientation="horizontal"
     >
 
@@ -12,7 +12,7 @@
         android:id="@+id/loading_circle"
         android:layout_width="@dimen/loading_circel_width"
         android:layout_height="@dimen/loading_circel_height"
-        android:contentDescription="@string/loading_circle"
+        android:contentDescription="@null"
         android:layout_gravity="center_vertical"
         android:layout_margin="@dimen/loading_circel_margin"
         android:src="@drawable/comm_loading_circle"
@@ -39,18 +39,18 @@
     
     <!-- 加大按钮触发区域...套一层view -->
     <LinearLayout 
-       	android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+       	android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:id="@+id/loading_cancel_view"
         >
 	    <!-- 取消加载按钮 -->
-		<ImageView 
+		<ImageButton 
 	        android:id="@+id/loading_cancel"
 	        android:layout_width="@dimen/loading_cancel_width"
 	        android:layout_height="@dimen/loading_cancel_height"
 	        android:layout_gravity="center"
-		    android:contentDescription="@string/loading_cancel"
-		    android:src="@drawable/comm_loading_cancel"
+		    android:contentDescription="@null"
+		    android:background="@drawable/comm_loading_cancel"
 		    android:layout_margin="@dimen/loading_cancel_margin"
 		    />
 	</LinearLayout>

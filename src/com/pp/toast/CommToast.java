@@ -103,7 +103,7 @@ public class CommToast
             // 自定义toast显示的view
             LayoutInflater inflater = (LayoutInflater) context
                     .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            View toastView = inflater.inflate(R.layout.toast, null);
+            View toastView = inflater.inflate(R.layout.comm_toast, null);
             TextView text = (TextView) toastView.findViewById(R.id.toast_text);
             text.setText(info);
 
