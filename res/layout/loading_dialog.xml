@@ -15,7 +15,7 @@
         android:contentDescription="@string/loading_circle"
         android:layout_gravity="center_vertical"
         android:layout_margin="@dimen/loading_circel_margin"
-        android:src="@drawable/loading_circle"
+        android:src="@drawable/comm_loading_circle"
         />
     
     <!-- loading文字 -->
@@ -50,7 +50,7 @@
 	        android:layout_height="@dimen/loading_cancel_height"
 	        android:layout_gravity="center"
 		    android:contentDescription="@string/loading_cancel"
-		    android:src="@drawable/loading_cancel"
+		    android:src="@drawable/comm_loading_cancel"
 		    android:layout_margin="@dimen/loading_cancel_margin"
 		    />
 	</LinearLayout>
