@@ -1,0 +1,85 @@
+#
+# An unexpected error has been detected by Java Runtime Environment:
+#
+#  Internal Error (classFileParser.cpp:2923), pid=8092, tid=6688
+#  Error: ShouldNotReachHere()
+#
+# Java VM: Java HotSpot(TM) Client VM (11.3-b02 mixed mode windows-x86)
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x018e9400):  JavaThread "Unknown thread" [_thread_in_vm, id=6688, stack(0x001a0000,0x001f0000)]
+
+Stack: [0x001a0000,0x001f0000]
+
+[error occurred during error reporting (printing native stack), id 0xc0000005]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x018e9400 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=6688, stack(0x001a0000,0x001f0000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Dynamic libraries:
+0x00400000 - 0x00424000 	D:\Program Files Work\Java\jre6\bin\javaw.exe
+0x77b90000 - 0x77ccc000 	C:\Windows\SYSTEM32\ntdll.dll
+0x76280000 - 0x76354000 	C:\Windows\system32\kernel32.dll
+0x75d20000 - 0x75d6b000 	C:\Windows\system32\KERNELBASE.dll
+0x760a0000 - 0x76140000 	C:\Windows\system32\ADVAPI32.dll
+0x765d0000 - 0x7667c000 	C:\Windows\system32\msvcrt.dll
+0x76260000 - 0x76279000 	C:\Windows\SYSTEM32\sechost.dll
+0x76520000 - 0x765c1000 	C:\Windows\system32\RPCRT4.dll
+0x77cf0000 - 0x77db9000 	C:\Windows\system32\USER32.dll
+0x77b40000 - 0x77b8e000 	C:\Windows\system32\GDI32.dll
+0x76250000 - 0x7625a000 	C:\Windows\system32\LPK.dll
+0x77a20000 - 0x77abd000 	C:\Windows\system32\USP10.dll
+0x75ec0000 - 0x75edf000 	C:\Windows\system32\IMM32.DLL
+0x76450000 - 0x7651c000 	C:\Windows\system32\MSCTF.dll
+0x7c340000 - 0x7c396000 	D:\Program Files Work\Java\jre6\bin\msvcr71.dll
+0x6d800000 - 0x6da56000 	D:\Program Files Work\Java\jre6\bin\client\jvm.dll
+0x75ae0000 - 0x75b12000 	C:\Windows\system32\WINMM.dll
+0x75900000 - 0x7594b000 	C:\Windows\system32\apphelp.dll
+0x6d290000 - 0x6d298000 	D:\Program Files Work\Java\jre6\bin\hpi.dll
+0x75d70000 - 0x75d75000 	C:\Windows\system32\PSAPI.DLL
+0x6d7b0000 - 0x6d7bc000 	D:\Program Files Work\Java\jre6\bin\verify.dll
+0x6d330000 - 0x6d34f000 	D:\Program Files Work\Java\jre6\bin\java.dll
+0x6d7f0000 - 0x6d7ff000 	D:\Program Files Work\Java\jre6\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=UTF-8 -Xbootclasspath:D:\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar 
+java_command: com.pp.threadpool.TestThreadPool
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=D:\Program Files Work\Java\jdk1.6.0_13
+CLASSPATH=;D:\Program Files Work\Java\jdk1.6.0_13\lib\dt.jar;D:\Program Files Work\Java\jdk1.6.0_13\lib\tools.jar;
+PATH=d:/Program Files Work/Java/jre6/bin/client;d:/Program Files Work/Java/jre6/bin;d:/Program Files Work/Java/jre6/lib/i386;d:\app\Administrator\product\11.2.0\client_1\bin;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\OpenCL SDK\2.0\bin\x86;D:\Program Files Work\TortoiseSVN\bin;D:\Program Files Work\Subversion\bin;D:\Program Files\VanDyke Software\Clients\;D:\Program Files Work\Java\jdk1.5.0\bin;D:\Program Files Work\apache-maven-3.0.4\bin;D:\Program Files Work\Android\gradle-1.6\bin;D:\Tomcat6.0\classes12.jar;D:\adt-bundle-windows-x86-20130729\sdk\platform-tools\;D:\adt-bundle-windows-x86-20130729\eclipse;
+USERNAME=Administrator
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=x86 Family 6 Model 42 Stepping 7, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows NT 6.1 Build 7600 
+
+CPU:total 4 (8 cores per cpu, 2 threads per core) family 6 model 10 stepping 7, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, ht
+
+Memory: 4k page, physical 2097151k(946552k free), swap 4194303k(2531916k free)
+
+vm_info: Java HotSpot(TM) Client VM (11.3-b02) for windows-x86 JRE (1.6.0_13-b03), built on Mar  9 2009 01:15:24 by "java_re" with MS VC++ 7.1
+
+time: Thu Mar 13 14:53:59 2014
+elapsed time: 0 seconds
+

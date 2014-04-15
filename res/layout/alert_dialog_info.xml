@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    >
+
+    <!-- 信息类型提示dialog -->
+    
+    <TextView 
+        android:layout_width="@dimen/alert_dialog_width"
+        android:layout_height="wrap_content"
+    	android:id="@+id/dialogInfoText"
+    	android:textSize="@dimen/alert_dialog_text_size"
+    	android:layout_margin="@dimen/alert_dialog_margin"
+        />
+    
+    <!-- 文本与按钮分隔线 -->
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_separate_line_height"
+        android:layout_margin="@dimen/dialog_separate_line_margin"
+        android:background="@android:color/darker_gray"
+        />
+    
+    <!-- 确认按钮 -->
+    <Button
+        android:id="@+id/alert_dialog_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/alert_dialog_confirm" 
+        android:textSize="@dimen/alert_dialog_btn_size"
+        android:textColor="@color/alert_dialog_btn_color"
+        />
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--   loading  -->
+    <!--  loading高度  -->
+    <dimen name="loading_height">50dp</dimen>
+    <!-- 圆圈宽度 -->
+    <dimen name="loading_circel_height">22dp</dimen>
+    <!-- 圆圈高度 -->
+    <dimen name="loading_circel_width">22dp</dimen>
+    <!-- 圆圈margin -->
+    <dimen name="loading_circel_margin">5dp</dimen>
+    <!-- 文本margin-->
+    <dimen name="loading_text_margin">10dp</dimen>
+    <!-- 文本大小 -->
+    <dimen name="loading_text_size">15sp</dimen>
+    <!-- 取消按钮宽度 -->
+    <dimen name="loading_cancel_height">25dp</dimen>
+    <!-- 取消按钮高度 -->
+    <dimen name="loading_cancel_width">35dp</dimen>
+    <!-- 取消按钮margin -->
+    <dimen name="loading_cancel_margin">5dp</dimen>
+    <!-- 取消按钮分隔竖线宽度 -->
+    <dimen name="loading_separate_line_width">1dp</dimen>
+    <!-- 取消按钮分隔竖线margin -->
+    <dimen name="loading_separate_line_margin">2dp</dimen>
+    
+    <!-- Toast -->
+    <!-- 文本大小 -->
+    <dimen name="toast_text_size">15sp</dimen>
+    <!-- 文本margin -->
+    <dimen name="toast_text_margin">5dp</dimen>
+    
+    <!-- AlertDialog -->
+    <!-- dialog宽度 -->
+    <dimen name="alert_dialog_width">250dp</dimen>
+    <!-- 提示信息字体大小 -->
+    <dimen name="alert_dialog_text_size">15sp</dimen>
+    <!-- 提示信息margin -->
+    <dimen name="alert_dialog_margin">15dp</dimen>
+    <!-- 提示信息文本和按钮的分隔线高度 -->
+    <dimen name="dialog_separate_line_height">1dp</dimen>
+    <!-- 分隔竖线margin -->
+    <dimen name="dialog_separate_line_margin">2dp</dimen>
+    <!-- 按钮字体大小 -->
+    <dimen name="alert_dialog_btn_size">18sp</dimen>
+    <!-- 存在两个按钮时的按钮宽度 -->
+    <dimen name="alert_dialog_btn_width">85dp</dimen>
+    <!-- 存在两个按钮时的按钮margin -->
+    <dimen name="alert_dialog_btn_margin">10dp</dimen>
+    
+    
+</resources>

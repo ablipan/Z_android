@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Z_android</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <!-- sharedpreferences的使用 -->
+    <string name="name">姓名</string>
+    <string name="age">年龄</string>
+    <string name="save">保存</string>
+    <string name="save_success">保存完成</string>
+    
+    <!-- listView的使用 -->
+    <string name="name_l">姓名</string>
+    <string name="phone_l">电话</string>
+    <string name="amount_l">存款</string>
+    
+    <!-- Parcelable的使用 -->
+    <string name="parcelable_btn">使用parcelable传递复杂对象</string>
+    
+    
+    <!-- loading Dialog -->
+    <string name="loading_text">加载中&#8230;</string>
+    <string name="loading_show">打开loading</string>
+    <string name="loading_text_custerm">啊哟哟&#8230;</string>
+    
+    <!-- img  contentDescription -->
+    <string name="loading_circle">loading图片</string>
+    <string name="loading_cancel">取消加载</string>
+    
+    <!-- Toast -->
+    <string name="toast_show">显示Toast</string>
+    
+    <!-- BaseActivity -->
+    <string name="base_activity_a">跳转到ActivityB</string>
+    <string name="base_activity_b">我是ActivityB</string>
+    
+    <!-- AlertDialog -->
+    <string name="alert_dialog_show">显示普通dialog</string>
+    <string name="alert_dialog_confirm">确定</string>
+    <string name="alert_dialog_cancel">取消</string>
+    
+</resources>

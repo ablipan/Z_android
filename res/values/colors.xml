@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<!-- alertDialog 按钮颜色 -->
+    <color name="alert_dialog_btn_color">#125FAD</color>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="NestedWeights" severity="ignore" />
+    <issue id="Suspicious0dp">
+        <ignore path="res/layout/alert_dialog_confirm.xml" />
+    </issue>
+</lint>
