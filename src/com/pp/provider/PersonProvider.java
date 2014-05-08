@@ -12,6 +12,7 @@ import android.content.UriMatcher;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
+import android.util.Log;
 
 import com.pp.sqlite.service.DBOpenHelper;
 
@@ -98,6 +99,7 @@ public class PersonProvider extends ContentProvider
     @Override
     public Uri insert(Uri uri, ContentValues values)
     {
+        Log.i("insert", uri.toString());
         SQLiteDatabase db = dbOpenHelper.getWritableDatabase();
         switch (MATCHER.match(uri))
         {
@@ -108,6 +110,9 @@ public class PersonProvider extends ContentProvider
 //                Uri insertUrl = Uri.parse(SCHEMA + AUTHORITY + TABLE + SPRIT + insertId);
                 
                 Uri insertUrl = ContentUris.withAppendedId(uri, insertId);
+                
+                //发出数据变化通知
+                getContext().getContentResolver().notifyChange(uri, null);
                 return insertUrl;
 
             default:

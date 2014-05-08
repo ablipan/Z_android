@@ -41,6 +41,10 @@
 
         <!-- Listview 的使用 -->
         <activity android:name="com.pp.listview.ListViewActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         
         <!-- Parcelable的使用-传递复杂参数  -->
@@ -51,20 +55,10 @@
         
         <!-- Loading框 -->
         <activity android:name="com.pp.loadingDialog.LoadingActivity" >
-                        <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         
         <!-- Toast -->
         <activity android:name="com.pp.toast.ToastActivity" >
-                        <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         
         <!-- BaseActivity -->
@@ -75,11 +69,6 @@
         
         <!-- BaseActivity -->
         <activity android:name="com.pp.dialog.CommDialogActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 	<!-- *****************************  activity  ***************************** -->
 	
