@@ -4,7 +4,11 @@
     <string name="app_name">Z_android</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
-
+    <string name="confirm">确定</string>
+    <string name="network_disable">请检查网络连接</string>
+    <string name="existApp">退出</string>
+    <string name="acessSetting">设置</string>
+    
     <!-- sharedpreferences的使用 -->
     <string name="name">姓名</string>
     <string name="age">年龄</string>
@@ -35,7 +39,16 @@
     <!-- AlertDialog -->
     <string name="alert_dialog_info_show">显示普通dialog</string>
     <string name="alert_dialog_confirm_show">显示comfirm</string>
+    <string name="alert_pop_show">显示Pop</string>
     <string name="alert_dialog_confirm">确定</string>
     <string name="alert_dialog_cancel">取消</string>
+    
+    <!-- Net -->
+    <string name="inputUrl">请输入图片url</string>
+    <string name="img_url">http://192.168.1.105:8080/Z_android_server/little.png</string>
+    <string name="inputHtmlUrl">请输入网页url</string>
+    <string name="html_url">http://192.168.1.105:8080/Z_android_server/index.html</string>
+    <string name="video_url">http://192.168.1.105:8080/Z_android_server/NetServlet</string>
+    <string name="video_length_unit">分钟</string>
     
 </resources>

@@ -22,20 +22,6 @@ public class ActivityA extends BaseActivity
 {
 
     @Override
-    protected void init()
-    {
-        // TODO Auto-generated method stub
-        
-    }
-
-    @Override
-    protected void initListener()
-    {
-        // TODO Auto-generated method stub
-        
-    }
-
-    @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);

@@ -7,6 +7,7 @@ package com.pp.baseActivity;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
@@ -47,11 +48,11 @@ public abstract class BaseActivity extends Activity {
         super.onCreate(savedInstanceState);  
     }  
       
-    /**初始化**/  
-    protected abstract void init();  
-      
-    /** 初始化監聽器**/  
-    protected abstract void initListener();  
+//    /**初始化**/  
+//    protected abstract void init();  
+//      
+//    /** 初始化監聽器**/  
+//    protected abstract void initListener();  
       
     /**  得到字符串資源 **/  
     public String getResStr(int id)  
@@ -228,5 +229,9 @@ public abstract class BaseActivity extends Activity {
     /** 默认退出 **/  
     protected void defaultFinish() {  
         super.finish();  
+    }  
+    
+    protected Context getContext() {  
+        return this;
     }  
 } 

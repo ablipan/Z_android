@@ -6,4 +6,21 @@
     <!-- 按钮点击后的颜色  -->
     <color name="comm_btn_click_color">#e5e5e5</color>
     
+        <!-- 文字颜色 -->
+    <!-- 白色字体颜色 -->
+    <color name="text_white">#ffffff</color>
+    <!-- 灰色字体颜色 -->
+    <color name="text_gray">#b2b2b2</color>
+    <!-- 黑色字体颜色 -->
+    <color name="text_black">#646464</color>
+    <!-- 蓝色字体 -->
+    <color name="text_blue">#036eb8</color>
+    <!-- 红色字体 -->
+    <color name="text_red">#FF6666</color>
+    
+    <color name="white">#ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="black">#000000</color>
+    
+    
 </resources>

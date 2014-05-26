@@ -6,12 +6,14 @@
 package com.pp.dialog;
 
 import android.app.Activity;
-import android.app.AlertDialog;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.LinearLayout.LayoutParams;
+import android.widget.TextView;
 
 import com.pp.R;
-import com.pp.toast.CommToast;
 
 /**
  * @author : lipan
@@ -33,21 +35,20 @@ public class CommDialogActivity extends Activity
     
     public void OpenInfoDialog(View v)
     {
-        AlertDialog showInfoDialog = CommAlertDialog.showInfoDialog(this, "这是一个测试信息");
+        TextView view = new TextView(this);
+        view.setLayoutParams(new LinearLayout.LayoutParams(
+                LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
+        view.setText("复仇擦擦擦擦");
+        CommAlertDialog.showInfoDialog(this, view, null, true, null);
     }
     
     public void OpenConfirmDialog(View v)
     {
         
-        AlertDialog showInfoDialog = CommAlertDialog.showConfirmDialog(this, "这是一个测试信息" ,new OnConfirmClickListener()
-        {
-            @Override
-            public void onClick(View v)
-            {
-                CommToast.showInfo(CommDialogActivity.this, "确定!!!!");
-            }
-        });
-        
+    }
+    
+    public void ShowPop(View v)
+    {
     }
     
 }
