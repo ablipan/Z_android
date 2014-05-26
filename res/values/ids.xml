@@ -1,0 +1,16 @@
+<resources>
+    
+    <!-- 导航栏返回键ID -->
+    <item name="navi_left_button" type="id"/>
+    <!-- 导航栏返回键外层layoutID -->
+    <item name="navi_left_button_layout" type="id"/>
+    <!-- 导航栏标题ID -->
+    <item name="navi_title" type="id"/>
+    <!-- 导航栏右边按钮 -->
+    <item name="navi_btn_right" type="id"/>
+    
+    <!-- 日历滚轮layout id -->
+    <item name="wheel_item_layout" type="layout"/>
+    <item name="wheel_item_text" type="id"/>
+    
+</resources>

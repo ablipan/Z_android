@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/gap_20"
+    >
+
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/inputUrl"
+        />
+    
+    <EditText
+        android:id="@+id/inputPath"
+        android:text="@string/img_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         />
+	<Button 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm"
+        android:onClick="BtnClick"
+	    />
+	<ImageView 
+	    android:id="@+id/netImg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+	    />
+</LinearLayout>
