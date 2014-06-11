@@ -21,6 +21,13 @@
     <color name="white">#ffffff</color>
     <color name="transparent">#00000000</color>
     <color name="black">#000000</color>
-    
-    
+	
+	
+	<color name="color0">#B8860B</color>
+	<color name="color1">#BC8F8F</color>
+	<color name="color2">#CD5C5C</color>
+	<color name="color3">#8B4513</color>
+	<color name="color4">#A0522D</color>
+	<color name="color5">#CD853F</color>
+
 </resources>

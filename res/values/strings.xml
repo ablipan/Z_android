@@ -9,6 +9,8 @@
     <string name="existApp">退出</string>
     <string name="acessSetting">设置</string>
     
+    <!-- View -->
+    
     <!-- sharedpreferences的使用 -->
     <string name="name">姓名</string>
     <string name="age">年龄</string>

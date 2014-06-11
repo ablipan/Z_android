@@ -38,12 +38,86 @@
 
         
     <!-- *****************************  activity  ***************************** -->
+        <!-- list入口 -->
+        <activity android:name=".demoList.DemoListActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+      <!-- *************  Android组件  ************* -->
         <!-- SharedPreferences 的使用 -->
-        <activity android:name="com.pp.sharedpreferences.SharedPreferencesActivity" >
+        <activity android:name="com.pp.sharedpreferences.SharedPreferencesActivity" android:label="Component/SharedPreferences/Base Use">
+        	<intent-filter>
+        		<action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+        	</intent-filter>
         </activity>
 
+      <!-- *************  Android View的使用  ************* -->
         <!-- Listview 的使用 -->
-        <activity android:name="com.pp.listview.ListViewActivity" >
+        <activity android:name="com.pp.listview.ListViewActivity" android:label="View/ListView">
+        	<intent-filter>
+        		<action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+        	</intent-filter>
+        </activity>
+        
+        <!-- Loading框 -->
+        <activity android:name="com.pp.loadingDialog.LoadingActivity"  android:label="View/Loading/Dialog Loading">
+        	<intent-filter>
+        		<action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+        	</intent-filter>
+        </activity>
+        
+        <!-- Toast -->
+        <activity android:name="com.pp.toast.ToastActivity"  android:label="View/Toast/Original Toast">
+        	<intent-filter>
+        		<action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+        	</intent-filter>
+        </activity>
+        
+        <!-- 通用Dialog -->
+        <activity android:name="com.pp.dialog.CommDialogActivity" android:label="View/Dialog/Base Dialog">
+        	<intent-filter>
+        		<action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+        	</intent-filter>
+        </activity>
+        
+        <!-- View Style-->
+        <activity android:name="com.pp.style.ViewStyleActivity" android:label="View/Style/Custom Style">
+            <intent-filter>
+        		<action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+        	</intent-filter>
+        </activity>
+        
+        <!-- View Gesture-->
+        <activity android:name="com.pp.gesture.ViewGestureActivity" android:label="View/Gesture/My Guesture">
+            <intent-filter>
+        		<action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+        	</intent-filter>
+        </activity>
+        
+        <!-- Layout Animation-->
+        <activity android:name="com.pp.view.LayoutAnimation" android:label="View/Animation/Layout Animation">
+            <intent-filter>
+        		<action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+        	</intent-filter>
+        </activity>
+        
+        <!-- View Animation-->
+        <activity android:name="com.pp.view.ViewAnimation" android:label="View/Animation/View Animation">
+            <intent-filter>
+        		<action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+        	</intent-filter>
         </activity>
         
         <!-- Parcelable的使用-传递复杂参数  -->
@@ -52,22 +126,10 @@
         <activity android:name="com.pp.parcelable.ActivityB" >
         </activity>
         
-        <!-- Loading框 -->
-        <activity android:name="com.pp.loadingDialog.LoadingActivity" >
-        </activity>
-        
-        <!-- Toast -->
-        <activity android:name="com.pp.toast.ToastActivity" >
-        </activity>
-        
         <!-- BaseActivity -->
         <activity android:name="com.pp.baseActivity.ActivityA" >
         </activity>
         <activity android:name="com.pp.baseActivity.ActivityB" >
-        </activity>
-        
-        <!-- 通用Dialog -->
-        <activity android:name="com.pp.dialog.CommDialogActivity" >
         </activity>
         
         <!-- 网络图片访问 -->
@@ -81,12 +143,9 @@
         </activity>
         
         <!-- Webview-->
-        <activity android:name="com.pp.webview.WebviewActivity" android:launchMode="singleTask">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        <activity android:name="com.pp.webview.WebviewActivity">
         </activity>
+        
 	<!-- *****************************  activity  ***************************** -->
 	
 	
