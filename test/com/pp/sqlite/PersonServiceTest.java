@@ -25,6 +25,7 @@ import com.pp.sqlite.service.PersonService;
 public class PersonServiceTest extends AndroidTestCase
 {
     public static final String TAG = "com.pp.sqlite.PersonServiceTest";
+    
     public void testCreateDB() throws Exception
     {
         DBOpenHelper db = new DBOpenHelper(getContext());

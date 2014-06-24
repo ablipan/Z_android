@@ -573,4 +573,16 @@ public class ViewUtils
             imageView.setBackgroundDrawable(resource);
         }
     }
+    
+    /**
+     * dp转pix
+     * @param context
+     * @param dp
+     * @return
+     */
+    public static float convertDpToPixel(Context context , float dp) {
+        DisplayMetrics metrics = context.getResources().getDisplayMetrics();
+        float px = dp * (metrics.densityDpi / 160f);
+        return px;
+    }
 }

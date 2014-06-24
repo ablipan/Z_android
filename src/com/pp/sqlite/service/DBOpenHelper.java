@@ -5,6 +5,7 @@
  */
 package com.pp.sqlite.service;
 
+import android.app.ApplicationErrorReport.CrashInfo;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
@@ -19,14 +20,13 @@ import android.database.sqlite.SQLiteOpenHelper;
  */
 public class DBOpenHelper extends SQLiteOpenHelper
 {
-
     //建表
     private static final String CREATE_PERSON = "CREATE TABLE person(personid integer primary key autoincrement ,name varchar(20))";
     
     //修改表
-    private static final String ALTER_PERSON_ADD_PHONE = "ALTER TABLE person ADD phone varchar(12) NULL";  //添加金额字段
+    private static final String ALTER_PERSON_ADD_PHONE = "ALTER TABLE person ADD phone varchar(12)";  //添加金额字段
     
-    private static final String ALTER_PERSON_ADD_AMONT = "ALTER TABLE person ADD amount integer NULL";  //添加金额字段
+    private static final String ALTER_PERSON_ADD_AMONT = "ALTER TABLE person ADD amount integer";  //添加金额字段
     
     /**
      * @param context
@@ -38,7 +38,7 @@ public class DBOpenHelper extends SQLiteOpenHelper
     public DBOpenHelper(Context context)
     {
         //lipan.db是数据库名称(默认保存在 <包>/databases/ 目录)，   null为使用系统默认的游标工厂，   1为版本号(大于等于1)。
-        super(context, "lipan.db", null, 2);
+        super(context, "lipan.db", null, 3);
     }
     
     @Override
@@ -46,13 +46,17 @@ public class DBOpenHelper extends SQLiteOpenHelper
     {
         //创建person表
         db.execSQL(CREATE_PERSON);
+        
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) // 数据库版本号升级时时被调用
     {
-        db.execSQL(ALTER_PERSON_ADD_PHONE);
-        db.execSQL(ALTER_PERSON_ADD_AMONT);
+        if(oldVersion == 1 && newVersion == 2)
+        {
+            db.execSQL(ALTER_PERSON_ADD_PHONE);
+            db.execSQL(ALTER_PERSON_ADD_AMONT);
+        }
     }
 
     @Override

@@ -55,7 +55,7 @@
         	</intent-filter>
         </activity>
 
-      <!-- *************  Android View的使用  ************* -->
+      <!-- *************  Android View begin  ************* -->
         <!-- Listview 的使用 -->
         <activity android:name="com.pp.listview.ListViewActivity" android:label="View/ListView">
         	<intent-filter>
@@ -105,19 +105,42 @@
         </activity>
         
         <!-- Layout Animation-->
-        <activity android:name="com.pp.view.LayoutAnimation" android:label="View/Animation/Layout Animation">
+        <activity android:name="com.pp.chart.LayoutAnimation" android:label="View/Animation/Layout Animation">
             <intent-filter>
         		<action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
         	</intent-filter>
         </activity>
         
-        <!-- View Animation-->
-        <activity android:name="com.pp.view.ViewAnimation" android:label="View/Animation/View Animation">
+        
+        <activity android:name="com.pp.chart.PieChartActivity" android:label="View/Chart/Pie Chart">
             <intent-filter>
         		<action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
         	</intent-filter>
+        </activity>
+        <!-- *************  Android View end************* -->
+        
+         <!-- ************* Net *************-->
+        <!-- 网络图片访问 -->
+        <activity android:name="com.pp.net.NetImageActivity" android:label="Net/Image">
+            <intent-filter>
+        		<action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+        	</intent-filter>
+        </activity>
+        <!-- 网络html访问 -->
+        <activity android:name="com.pp.net.HtmlViewerActivity"  android:label="Net/Html Viewer">
+            <intent-filter>
+        		<action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+        	</intent-filter>
+        </activity>
+        <!-- 网络html访问 -->
+        <activity android:name="com.pp.net.NewsActivity"  android:label="Net/Image">
+        </activity>
+        <!-- Webview-->
+        <activity android:name="com.pp.webview.WebviewActivity">
         </activity>
         
         <!-- Parcelable的使用-传递复杂参数  -->
@@ -132,19 +155,6 @@
         <activity android:name="com.pp.baseActivity.ActivityB" >
         </activity>
         
-        <!-- 网络图片访问 -->
-        <activity android:name="com.pp.net.NetImageActivity" >
-        </activity>
-        <!-- 网络html访问 -->
-        <activity android:name="com.pp.net.HtmlViewerActivity" >
-        </activity>
-        <!-- 网络html访问 -->
-        <activity android:name="com.pp.net.NewsActivity" >
-        </activity>
-        
-        <!-- Webview-->
-        <activity android:name="com.pp.webview.WebviewActivity">
-        </activity>
         
 	<!-- *****************************  activity  ***************************** -->
 	
